@@ -16,10 +16,10 @@ const HighestTransaction = props => {
           Największa transakcja: <br />
           Nazwa: {highest.title}
           <br />
-          Kwota PLN:
+          Kwota EUR:&nbsp;
           {highest.amount}
           <br />
-          Kwota EUR: <ConvertedAmount amount={highest.amount} />
+          Kwota PLN: <ConvertedAmount amount={highest.amount} />
         </p>
       )}
     </>

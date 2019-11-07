@@ -28,11 +28,11 @@ const TransactionsList = props => {
         <Input
           type="number"
           name="amount"
-          placeholder="Podaj kwotę transakcji w PLN"
+          placeholder="Podaj kwotę transakcji w EUR"
           value={values.amount}
           onChange={handleChange}
         />
-        PLN&nbsp;
+        EUR&nbsp;
         <button
           disabled={!values.title || !values.amount}
           onClick={() => {
@@ -54,8 +54,8 @@ const TransactionsList = props => {
           <tbody>
             <tr>
               <th>Nazwa transakcji</th>
-              <th> PLN</th>
               <th> EUR</th>
+              <th> PLN</th>
               <th>X</th>
             </tr>
             {transactions.map(transaction => (
